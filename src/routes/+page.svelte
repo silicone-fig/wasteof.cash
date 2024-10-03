@@ -18,6 +18,21 @@
   });
 </script>
 
+<sveltekit:head>
+  <title>home | wasteof.cash</title>
+  <meta name="og:title" content="wasteof.cash - home" />
+  <meta name="title" content="wasteof.cash - home" />
+
+  <meta
+    name="og:description"
+    content="wasteof.cash - a supercharged alternative client for wasteof.money"
+  />
+  <meta
+    name="description"
+    content="wasteof.cash - a supercharged alternative client for wasteof.money"
+  />
+</sveltekit:head>
+
 <div class="h-screen flex flex-col">
   <nav class="w-full pt-6 px-6 flex justify-between items-center">
     <div>
@@ -79,7 +94,7 @@
     background: linear-gradient(180deg, #548cd6 24%, #e3c7b1 100%);
     background-attachment: fixed;
     overflow: hidden;
-    
+
     touch-action: none;
   }
   @font-face {
