@@ -1,0 +1,37 @@
+{
+	"name": "wasteof.cash",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev --host",
+		"build": "vite build",
+		"preview": "vite preview --host",
+		"start": "node server.js"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-node": "^5.2.5",
+		"@sveltejs/kit": "^2.5.25",
+		"@sveltejs/vite-plugin-svelte": "^3.1.1",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.39",
+		"svelte": "^4.2.19",
+		"tailwindcss": "^3.4.10",
+		"vite": "^5.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"bits-ui": "^0.21.15",
+		"boxicons": "^2.1.4",
+		"clsx": "^2.1.1",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.0",
+		"highlight.js": "^11.10.0",
+		"svhighlight": "^0.7.1",
+		"tailwind-merge": "^2.5.2",
+		"tailwind-variants": "^0.2.1"
+	},
+	"description": "a third party wrapper for wasteof.money",
+	"main": "server.js",
+	"author": "siliconeCB_",
+	"license": "ISC"
+}

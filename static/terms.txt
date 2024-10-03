@@ -1,0 +1,44 @@
++--- terms of service ---+
+last updated: 9-29-24
+
+
+1. acceptance of terms
+
+by accessing or using wasteof.cash (the "service"), a third-party wrapper and client for wasteof.money, you (the "user") agree to be bound by these terms of service. if you do not agree to these terms, you may not use the service.
+
+2. eligibility
+
+users must be 13 years of age or older to access or use wasteof.cash. by using the service, you represent and warrant that you are at least 13 years old. if you are under 13 years of age, you may not, under any circumstances, use the service.
+
+3. compliance with wasteof.money terms
+
+users of wasteof.cash must comply with the terms of service (rules) of wasteof.money. these include, but are not limited to:
+
+a) treating all users with respect
+b) maintaining personal safety and privacy
+c) refraining from impersonation and disinformation
+d) reporting security issues without causing damage
+e) contributing to a positive community environment
+
+4. additional terms for wasteof.cash
+
+in addition to the wasteof.money terms, users of wasteof.cash agree to the following:
+
+a) the developer, siliconeCB_, reserves the right to ban any user from wasteof.cash at their sole discretion
+   (bans imposed on wasteof.cash do not affect the user's access to wasteof.money)
+
+b) users acknowledge that wasteof.cash is an independent project and is not officially affiliated with or endorsed by wasteof.money
+
+5. modifications to service
+
+the developer reserves the right to modify, discontinue, or shutdown wasteof.cash at any time, with or without notice.
+
+6. limitation of liability
+
+the developer shall not be liable for any indirect, incidental, consequential, or punitive damages resulting from the use of or inability to use the service.
+
+7. severability
+
+if any provision of these terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these terms shall otherwise remain in full force and effect and enforceable.
+
+by using wasteof.cash, you acknowledge that you have read, understood, and agree to be bound by these terms of service.

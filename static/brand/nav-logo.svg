@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189 95" width="60" height="30">
+	<title>nav-logo-black-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h188.94v94.47h-188.94zm11.81 23.62l12.9 47.27h13.9l8.15-29.74h0.58l8.16 29.74h13.92l12.88-47.27h-13.28l-7.23 31.57h-0.39l-7.79-31.57h-13.06l-7.66 31.75h-0.42l-7.36-31.75z"/>
+		</clipPath>
+		<image  width="189" height="95" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAABfAQMAAACHlVT6AAAAAXNSR0IB2cksfwAAAANQTFRF3NnZjBzlqAAAACBJREFUeJztyTEBAAAMAqDZv/QSaAJ4yRURQgghhBAjHsamAGBSj0orAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<use  href="#img1" x="0" y="0"/>
+	</g>
+</svg>

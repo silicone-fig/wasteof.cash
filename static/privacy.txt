@@ -1,0 +1,55 @@
++--- privacy policy ---+
+last updated: 9-29-24
+
+
+1. introduction
+
+this privacy policy outlines the data collection and usage practices of wasteof.cash (the "service"), a third-party wrapper and client for wasteof.money. both wasteof.cash and wasteof.money are hobby projects and do not collect data for commercial purposes.
+
+2. data collection and usage
+
+wasteof.money and wasteof.cash collect certain data necessary for the services to function. this includes:
+
+a) wasteof.money data:
+   - ip addresses
+   - usernames
+   - bcrypt hashed and salted passwords
+   - email addresses
+   - any other data explicitly entered into the wasteof.money website
+
+b) wasteof.cash data:
+   - usernames
+   - ip addresses (for analytics purposes only)
+   - any data explicitly entered into the wasteof.cash site
+
+wasteof.cash does not store or collect ANY private data from wasteof.money, such as passwords or other sensitive information not listed above.
+all user authentication scripts or any script that handles user data is available publically on the github repo linked on the site
+
+3. external requests and apis
+
+most if not all external data requests made by wasteof.cash are directed to the wasteof.money api. specific features of wasteof.cash may utilize an internal api. (/api, or api.wasteof.cash)
+
+4. analytics
+
+for analytics purposes, wasteof.cash utilizes shynet, a self-hosted, privacy-friendly web analytics tool. if you wish to opt out of analytics tracking, you may block the utm.siliconecb.cc domain on your device or network.
+
+5. third-party services
+
+the wasteof.money site utilizes the following third-party services:
+-   cloudflare for content delivery and security
+-   github for user authentication
+-   google for user authentication and recaptcha during sign-up
+
+wasteof.cash uses cloudflare for ddos protection and other basic security features.
+
+you are encouraged to review the privacy policy of wasteof.money yourself for more detailed information on it's data practices.
+
+6. data security and user rights
+
+wasteof.cash has reasonable security measures in place to protect user data. you have the right to access your personal data, request corrections, and request data deletion. to exercise these rights and/or request data deletion from wasteof.cash, contact me@siliconecb.cc or DM on discord @siliconecb_.
+
+7. changes to privacy policy
+
+the service reserves the right to modify this privacy policy at any time with or without notice. you are responsible for regularly reviewing this policy for updates.
+
+by using wasteof.cash, you acknowledge that you have read, understood, and agree to this privacy policy.
