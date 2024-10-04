@@ -35,7 +35,7 @@
 
 <div class="h-screen flex flex-col">
   <nav class="w-full pt-6 px-6 flex justify-between items-center">
-    <div>
+    <a href="/">
       <img
         src="/brand/nav-logo.svg"
         alt="Logo"
@@ -44,9 +44,9 @@
         class="rounded"
         style="border-radius: 6px"
       />
-    </div>
+    </a>
     <div class="flex items-center">
-      <a href="/" class="mr-10">
+      <a href="/demo" class="mr-10">
         <span
           style="font-family: 'Nohemi'; font-weight: 300;"
           class="text-[#EFE5E5] text-[16.5px]"
@@ -54,7 +54,7 @@
           explore
         </span>
       </a>
-      <a href="/" class="mr-[45px]">
+      <a href="/about" class="mr-[45px]">
         <span
           style="font-family: 'Nohemi'; font-weight: 300;"
           class="text-[#EFE5E5] text-[16.5px]"

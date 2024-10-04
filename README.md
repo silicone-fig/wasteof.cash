@@ -1,3 +1,7 @@
-an aesthetic wrapper for wasteof.money
+<img src="static/brand/banner.png" alt="gh banner" width="500">
 
-under construction 👷‍♂️
+# wasteof.cash
+a supercharged alternative client for wasteof.money
+
+## under construction!
+will be opening to beta testers soon...

@@ -1,5 +1,5 @@
 <script>
-  // this will come later!
+  import Post from "../../lib/components/posts/Post.svelte";
 </script>
 
 <sveltekit:head>
@@ -16,6 +16,10 @@
     content="this is your feed, decluttered and personalized for you."
   />
 </sveltekit:head>
+
+<div class="bg-[#16181a] h-screen">
+  <Post id="60c4977c59c722b5661559c6" />
+</div>
 
 <style>
   @font-face {
