@@ -66,7 +66,7 @@
   </nav>
 
   <main class="flex-grow flex items-center justify-center">
-    <div class="text-center" style="transform: translateY(-25%);">
+    <div class="text-center" style="transform: translateY(-15%);">
       <h1
         style="font-family: 'Nohemi'; font-weight: 300; font-size: 70px; line-height: 1.1;"
       >
@@ -82,6 +82,11 @@
         ><br /><br />
         "wasteof on roids" - @siliconecb_
       </p>
+      <div class="button-container mt-6">
+        <button class="sign-in-button">
+          <span class="button-text">Sign In ➝</span>
+        </button>
+      </div>
     </div>
   </main>
 </div>
@@ -94,7 +99,6 @@
     background: linear-gradient(180deg, #548cd6 24%, #e3c7b1 100%);
     background-attachment: fixed;
     overflow: hidden;
-
     touch-action: none;
   }
   @font-face {
@@ -129,5 +133,38 @@
     height: 1px;
     background: linear-gradient(180deg, #1e221f 40%, #c9cae9 155%);
     z-index: -1;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .sign-in-button {
+    font-family: "Nohemi", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    width: 110px;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .button-text {
+    display: inline-block;
+    line-height: 1;
+    transform: translateY(1px);
+  }
+  .sign-in-button:hover {
+    background-color: #ffffff;
+    color: black;
   }
 </style>
