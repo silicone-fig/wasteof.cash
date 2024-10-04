@@ -83,15 +83,18 @@
         "wasteof on roids" - @siliconecb_
       </p>
       <div class="button-container mt-6">
-        <button class="sign-in-button">
-          <span class="button-text">Sign In ➝</span>
-        </button>
+        <a href="/login" data-sveltekit-preload-data="off">
+          <button class="sign-in-button">
+            <span class="button-text">Sign In ➝</span>
+          </button>
+        </a>
       </div>
     </div>
   </main>
 </div>
 
 <style>
+  /*
   :global(html, body) {
     margin: 0;
     padding: 0;
@@ -101,6 +104,7 @@
     overflow: hidden;
     touch-action: none;
   }
+  */
   @font-face {
     font-family: "Platypi";
     src: url("/fonts/Platypi/Platypi-VF.ttf");
