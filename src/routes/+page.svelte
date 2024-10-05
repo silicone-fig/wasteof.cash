@@ -46,7 +46,7 @@
       />
     </a>
     <div class="flex items-center">
-      <a href="/demo" class="mr-10">
+      <a href="/" class="mr-10">
         <span
           style="font-family: 'Nohemi'; font-weight: 300;"
           class="text-[#EFE5E5] text-[16.5px]"
@@ -54,7 +54,7 @@
           explore
         </span>
       </a>
-      <a href="/about" class="mr-[45px]">
+      <a href="/" class="mr-[45px]">
         <span
           style="font-family: 'Nohemi'; font-weight: 300;"
           class="text-[#EFE5E5] text-[16.5px]"

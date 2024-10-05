@@ -3,7 +3,7 @@ import { json } from '@sveltejs/kit';
 export async function POST({ request }) {
   const body = await request.json();
   if (!body || body.intentions !== 'authenticate') {
-    return json({ error: 'invalid intentions' }, 401);
+    return json({ error: 'invalid intentions' }, 403);
   }
 
   const { usr, pswd } = body;
