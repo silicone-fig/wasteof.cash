@@ -1,6 +1,6 @@
 {
 	"name": "wasteof.cash",
-	"version": "0.1.0",
+	"version": "0.1.9",
 	"private": true,
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.2.5",
