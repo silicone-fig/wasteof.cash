@@ -94,17 +94,6 @@
 </div>
 
 <style>
-  /*
-  :global(html, body) {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: linear-gradient(180deg, #548cd6 24%, #e3c7b1 100%);
-    background-attachment: fixed;
-    overflow: hidden;
-    touch-action: none;
-  }
-  */
   @font-face {
     font-family: "Platypi";
     src: url("/fonts/Platypi/Platypi-VF.ttf");

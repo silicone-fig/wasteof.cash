@@ -2,12 +2,6 @@
 	"name": "wasteof.cash",
 	"version": "0.1.0",
 	"private": true,
-	"scripts": {
-		"dev": "vite dev --host",
-		"build": "vite build",
-		"preview": "vite preview --host",
-		"start": "node server.js"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.2.5",
 		"@sveltejs/kit": "^2.5.25",
@@ -32,7 +26,7 @@
 		"tailwind-merge": "^2.5.2",
 		"tailwind-variants": "^0.2.1"
 	},
-	"description": "a third party wrapper for wasteof.money",
+	"description": "a supercharged alternative client for wasteof.money",
 	"main": "server.js",
 	"author": "siliconeCB_",
 	"license": "ISC"
