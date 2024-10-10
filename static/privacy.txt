@@ -1,5 +1,5 @@
 +--- privacy policy ---+
-last updated: 10-4-24
+last updated: 10-5-24
 
 
 1. introduction
@@ -30,7 +30,8 @@ i cannot speak for how wasteof.money uses the data it collects, you are encourag
 
 3. external requests and apis
 
-most if not all external data requests made by wasteof.cash are directed to the wasteof.money api. niche features of wasteof.cash may utilize an internal api. (/api, or api.wasteof.cash)
+most if not all external data requests made by wasteof.cash are directed to the wasteof.money api. niche features of wasteof.cash may utilize an internal api. (/api, api.wasteof.cash, or api.wasteof.me)
+api.wasteof.me is simply a cloudflare worker that proxies all incoming requests to api.wasteof.money to get around the pesky CORS rules in place.
 
 4. analytics
 

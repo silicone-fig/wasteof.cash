@@ -1,3 +1,5 @@
+<!-- i only use api.wasteof.me to bypass those pesky CORS rules!
+ it is simply a cf worker that proxies requests to api.wasteof.money-->
 <script>
   export let id;
 
@@ -14,7 +16,7 @@
   import { Skeleton } from "$lib/components/ui/skeleton/index.js";
 
   async function loadPost() {
-    const response = await fetch(`https://api.wasteof.money/posts/${id}`);
+    const response = await fetch(`https://api.wasteof.me/posts/${id}`);
     const data = await response.json();
 
     username = data.poster.name;
@@ -22,7 +24,7 @@
     comments = data.comments;
     reposts = data.reposts;
     timestamp = formatTime(data.time);
-    image = `https://api.wasteof.money/users/${username}/picture`;
+    image = `https://api.wasteof.me/users/${username}/picture`;
     text = data.revisions.find((revision) => revision.current).content;
     loaded = true;
   }
