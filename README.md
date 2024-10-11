@@ -31,7 +31,7 @@ client for wasteof.money with superpowers.
 
 ## disclaimer
 
-> this project is still in beta and under active development, 
+> this project is still in beta and under active development, major and potentially catastrophic changes may occur occasionally. if you find any bugs or security vulnerabilities, open a PR/issue for bugs and report to the appropriate contact methods at <a href="https://cash.wasteof.me/security">/security.txt</a> for security vulns.
 
 ## the stack 😎
 
@@ -48,6 +48,18 @@ client for wasteof.money with superpowers.
 
 ## beta testing
 the site will be open to select beta testers soon, stay tuned!
+
+## roadmap
+- [x] landing page
+- [x] login page
+- [x] database setup
+- [ ] feed page
+- [ ] real-time post stats
+- [ ] explore, search, messages, profiles, and settings page
+- [ ] post bookmarks
+- [ ] extended explore page
+- [ ] post scheduling
+> - [ ] feed de-clutterer with AI 👀
 
 # privacy
 wasteof.cash does not store wasteof.money credentials under any circumstances¹, read the <a href="https://cash.wasteof.me/privacy">privacy policy</a> for more details.
