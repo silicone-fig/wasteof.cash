@@ -59,7 +59,7 @@ the site will be open to select beta testers soon, stay tuned!
 - [ ] post bookmarks
 - [ ] extended explore page
 - [ ] post scheduling
-> - [ ] feed de-clutterer with AI 👀
+> - [ ] (potential) feed de-clutterer with AI 👀
 
 # privacy
 wasteof.cash does not store wasteof.money credentials under any circumstances¹, read the <a href="https://cash.wasteof.me/privacy">privacy policy</a> for more details.
@@ -77,3 +77,17 @@ npm run migrate
 vite build
 vite dev --host
 ```
+<br />
+<br />
+<br />
+<p align="center">
+    wasteof.cash :)
+    <br />
+    <br />
+    <a href="https://cash.wasteof.me/privacy">privacy</a>
+    ·
+    <a href="https://cash.wasteof.me/terms">terms</a>
+    ·
+    <a href="https://cash.wasteof.me/security">security</a>
+  </p>
+</p>
