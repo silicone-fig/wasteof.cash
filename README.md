@@ -19,7 +19,7 @@
 </p>
   
 wasteof.cash is a spirited and cutting-edge alternative
-client for wasteof.money with superpowers.
+client for wasteof.money with <ins>**superpowers.**</ins>
 
 - pretty ui ✨
 - real-time post stats
