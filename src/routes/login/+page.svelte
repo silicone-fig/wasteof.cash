@@ -1,6 +1,10 @@
 <script>
   import { goto } from "$app/navigation";
+  import { toast, Toaster } from 'svelte-sonner';
   import { fade } from "svelte/transition";
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
+  
 
   let username = "";
   let password = "";
@@ -46,6 +50,19 @@
       },
     };
   }
+
+  onMount(() => {
+    if (browser) {
+      const cookies = document.cookie.split(';');
+      const showToast = cookies.some(cookie => cookie.trim().startsWith('inv_sesh=true'));
+      
+      if (showToast) {
+        toast.error('invalid session, log in!');
+        
+        document.cookie = 'inv_sesh=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      }
+    }
+  });
 </script>
 
 <sveltekit:head>
@@ -67,6 +84,7 @@
   />
 </sveltekit:head>
 
+<Toaster expand={false} richColors position="bottom-right" />
 <div class="h-screen flex flex-col">
   <nav class="w-full pt-6 px-6 flex justify-between items-center">
     <a

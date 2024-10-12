@@ -7,10 +7,8 @@ import { goto } from '$app/navigation';
 export function load(/** @type {import('@sveltejs/kit').LoadEvent} */ event) {
     if (browser) {
         const areyousignedin = document.cookie.includes('token=');
-        if (!areyousignedin) {
-            // Set the cookie to show the toast
-            document.cookie = 'inv_sesh=true; path=/; max-age=60';
-            goto('/login');
+        if (areyousignedin) {
+            goto('/feed');
         }
     }
 
