@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"generate": "drizzle-kit generate",
-		"push": "drizzle-kit push"
+		"migrate": "drizzle-kit push",
+		"studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.2.5",

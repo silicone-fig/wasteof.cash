@@ -34,6 +34,7 @@
     }
   }
 
+  // @ts-ignore
   function fadeoutsuperkool(node) {
     const timer = setTimeout(() => {
       errorMessage = "";

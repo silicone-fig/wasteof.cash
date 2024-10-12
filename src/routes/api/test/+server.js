@@ -1,3 +1,4 @@
+// @ts-nocheck
 // pulled from my tests at siliconecb.cc (portfolio site, check it out!)
 import { json } from '@sveltejs/kit';
 
