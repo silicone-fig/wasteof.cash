@@ -87,8 +87,9 @@
   </nav>
 
   <main class="flex-grow flex items-center justify-center -mt-20 relative">
-    <div
+    <form
       class="bg-white rounded-[2rem] w-80 h-[400px] relative flex flex-col items-center"
+      on:submit|preventDefault={signmeinpls}
     >
       <img
         src="/img/wombat.png"
@@ -135,7 +136,7 @@
           />
         </div>
         <button
-          on:click={signmeinpls}
+          type="submit"
           class="w-full py-1 rounded-lg bg-[#1E1E1E] text-white focus:outline-none hover:bg-[#2A2A2A] transition-colors duration-200 mt-6"
           style="font-family: 'Nohemi'; font-weight: 400; font-size: 14px;"
         >
@@ -152,7 +153,7 @@
           </p>
         {/if}
       </div>
-    </div>
+    </form>
   </main>
 </div>
 
