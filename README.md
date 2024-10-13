@@ -54,8 +54,8 @@ the site will be open to select beta testers soon, stay tuned!
 - [x] login page
 - [x] database setup
 - [ ] feed page
-- [ ] real-time post stats
 - [ ] explore, search, messages, profiles, and settings page
+- [ ] real-time post stats
 - [ ] post bookmarks
 - [ ] extended explore page
 - [ ] post scheduling
