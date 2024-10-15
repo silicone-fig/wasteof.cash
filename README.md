@@ -31,7 +31,7 @@ client for wasteof.money with <ins>**superpowers.**</ins>
 
 ## disclaimer
 
-> this project is still in beta and under active development, major and potentially catastrophic changes may occur occasionally. if you find any bugs or security vulnerabilities, open a PR/issue for bugs and report to the appropriate contact methods at <a href="https://cash.wasteof.me/security">/security.txt</a> for security vulns.
+> this project is still in beta and under active development, major and potentially catastrophic changes may occur (occasionally). if you find any bugs or security vulnerabilities, open a PR/issue for bugs and report to the appropriate contact methods at <a href="https://cash.wasteof.me/security">/security.txt</a> for security vulns.
 
 ## the stack 😎
 
