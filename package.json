@@ -13,6 +13,7 @@
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@types/pg": "^8.11.10",
 		"autoprefixer": "^10.4.20",
+		"bits-ui": "^0.21.16",
 		"drizzle-kit": "^0.25.0",
 		"postcss": "^8.4.39",
 		"svelte": "^4.2.19",
@@ -22,7 +23,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bits-ui": "^0.21.15",
 		"boxicons": "^2.1.4",
 		"clsx": "^2.1.1",
 		"dotenv": "^16.4.5",
