@@ -1,3 +1,7 @@
+<script>
+  import * as Avatar from "$lib/components/ui/avatar";
+</script>
+
 <sveltekit:head>
   <title>feed | wasteof.cash</title>
   <meta name="og:title" content="wasteof.cash - feed" />
@@ -75,6 +79,12 @@
       </a>
     </div>
   </nav>
+  <div class="absolute top-8 right-14">
+    <Avatar.Root class="w-10 h-10">
+      <Avatar.Image src="https://api.wasteof.money/users/jeffalo/picture" alt="@jeffalo" />
+      <Avatar.Fallback>J</Avatar.Fallback>
+    </Avatar.Root>
+  </div>
 </div>
 
 <style>
