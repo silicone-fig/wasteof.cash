@@ -1,6 +1,7 @@
 <!-- i only use api.wasteof.me to bypass those pesky CORS rules!
  it is simply a cf worker that proxies requests to api.wasteof.money-->
 <script>
+  // @ts-ignore
   export let id;
 
   let username = "";
@@ -12,10 +13,12 @@
   let text = "";
   let loaded = false;
 
+  // @ts-ignore
   import { onMount } from "svelte";
   import { Skeleton } from "$lib/components/ui/skeleton/index.js";
 
   async function loadPost() {
+    // @ts-ignore
     const response = await fetch(`https://api.wasteof.me/posts/${id}`);
     const data = await response.json();
 
@@ -25,10 +28,12 @@
     reposts = data.reposts;
     timestamp = formatTime(data.time);
     image = `https://api.wasteof.me/users/${username}/picture`;
+    // @ts-ignore
     text = data.revisions.find((revision) => revision.current).content;
     loaded = true;
   }
 
+  // @ts-ignore
   function formatTime(time) {
     const now = new Date().getTime();
     const diff = now - time;

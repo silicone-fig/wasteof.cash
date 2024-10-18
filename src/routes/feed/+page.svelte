@@ -1,5 +1,56 @@
 <script>
+  // @ts-nocheck
+  import { onMount } from "svelte";
+  import { browser } from "$app/environment";
   import * as Avatar from "$lib/components/ui/avatar";
+  import { Skeleton } from "$lib/components/ui/skeleton/index.js";
+
+  let username = "";
+  let avatarUrl = "";
+
+  async function isrealtoken() {
+    if (!browser) return;
+
+    const token = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith("token="))
+      ?.split("=")[1];
+
+    if (token) {
+      try {
+        const response = await fetch("https://api.wasteof.money/session", {
+          headers: {
+            Authorization: token,
+          },
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          username = data.user.name;
+          avatarUrl = `https://api.wasteof.me/users/${username}/picture`;
+        } else {
+          invalidtokensignout();
+        }
+      } catch (error) {
+        console.error(
+          "you have an invalid token or there was an error fetching:",
+          error
+        );
+        invalidtokensignout();
+      }
+    }
+  }
+
+  function invalidtokensignout() {
+    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    if (browser) {
+      window.location.reload();
+    }
+  }
+
+  onMount(() => {
+    isrealtoken();
+  });
 </script>
 
 <sveltekit:head>
@@ -46,7 +97,7 @@
 
     <div class="flex flex-col space-y-3 text-white text-lg pl-2">
       <a href="/feed" class="flex items-center space-x-3">
-        <i class='bx bx-home-alt nav-icon' style='color:#7BB0FF'></i>
+        <i class="bx bx-home-alt nav-icon" style="color:#7BB0FF"></i>
         <span
           style="font-family: 'Nohemi'; font-weight: 500; font-size: 16px; color: #7BB0FF"
         >
@@ -54,7 +105,7 @@
         </span>
       </a>
       <a href="/explore" class="flex items-center space-x-3">
-        <i class='bx bx-search nav-icon' style='color:#ffffff'></i>
+        <i class="bx bx-search nav-icon" style="color:#ffffff"></i>
         <span
           style="font-family: 'Nohemi'; font-weight: 400; font-size: 16px; color: #ffffff"
         >
@@ -62,7 +113,7 @@
         </span>
       </a>
       <a href="/bookmarks" class="flex items-center space-x-3">
-        <i class='bx bx-bookmark nav-icon' style='color:#ffffff'></i>
+        <i class="bx bx-bookmark nav-icon" style="color:#ffffff"></i>
         <span
           style="font-family: 'Nohemi'; font-weight: 400; font-size: 16px; color: #ffffff"
         >
@@ -70,7 +121,7 @@
         </span>
       </a>
       <a href="/messages" class="flex items-center space-x-3">
-        <i class='bx bx-message nav-icon' style='color:#ffffff'></i>
+        <i class="bx bx-message nav-icon" style="color:#ffffff"></i>
         <span
           style="font-family: 'Nohemi'; font-weight: 400; font-size: 16px; color: #ffffff"
         >
@@ -81,8 +132,15 @@
   </nav>
   <div class="absolute top-8 right-14">
     <Avatar.Root class="w-9 h-9">
-      <Avatar.Image src="https://api.wasteof.money/users/jeffalo/picture" alt="@jeffalo" />
-      <Avatar.Fallback>J</Avatar.Fallback>
+      {#if avatarUrl}
+        <Avatar.Image src={avatarUrl} alt={`@${username}`} />
+      {:else}
+        <Avatar.Fallback
+          ><Skeleton
+            class="h-8 w-8 rounded-full bg-gray-500 dark:bg-gray-700"
+          /></Avatar.Fallback
+        >
+      {/if}
     </Avatar.Root>
   </div>
 </div>
@@ -122,4 +180,3 @@
     transform: translateY(0px);
   }
 </style>
-
