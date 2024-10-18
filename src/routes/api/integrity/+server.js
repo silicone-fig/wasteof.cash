@@ -12,7 +12,7 @@ export async function GET() {
 
     const [
       hash,
-      authorName,
+      author,
       lastUpdateTimestamp,
       treeHash
     ] = commitInfo;
@@ -25,7 +25,7 @@ export async function GET() {
 
     const commitData = {
       hash,
-      authorName,
+      author,
       lastUpdate: new Date(parseInt(lastUpdateTimestamp) * 1000).toISOString(),
       treeHash,
       branchName,
