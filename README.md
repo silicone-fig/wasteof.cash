@@ -72,6 +72,8 @@ open a pull request or just yell at me about bugs lol
 ## development
 
 ```bash
+mv .env.template .env
+npm ci
 npm run generate
 npm run migrate
 vite build
