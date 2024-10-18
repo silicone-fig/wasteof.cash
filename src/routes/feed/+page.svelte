@@ -80,7 +80,7 @@
     </div>
   </nav>
   <div class="absolute top-8 right-14">
-    <Avatar.Root class="w-10 h-10">
+    <Avatar.Root class="w-9 h-9">
       <Avatar.Image src="https://api.wasteof.money/users/jeffalo/picture" alt="@jeffalo" />
       <Avatar.Fallback>J</Avatar.Fallback>
     </Avatar.Root>
@@ -122,3 +122,4 @@
     transform: translateY(0px);
   }
 </style>
+
