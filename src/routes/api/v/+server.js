@@ -20,8 +20,8 @@ export async function GET() {
     const branchName = execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
     const remoteUrl = execSync('git config --get remote.origin.url').toString().trim();
 
-    const packageJson = JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf-8'));
-    const version = packageJson.version || 'unknown';
+    const project = JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf-8'));
+    const version = project.version || 'unknown';
 
     const commitData = {
       hash,
