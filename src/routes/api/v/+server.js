@@ -13,12 +13,12 @@ export async function GET() {
     const [
       hash,
       author,
-      lastUpdateTimestamp,
+      timestamp,
       treeHash
     ] = commitInfo;
 
-    const branchName = execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
-    const remoteUrl = execSync('git config --get remote.origin.url').toString().trim();
+    const branch = execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
+    const remote = execSync('git config --get remote.origin.url').toString().trim();
 
     const project = JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf-8'));
     const version = project.version || 'unknown';
@@ -26,10 +26,10 @@ export async function GET() {
     const commitData = {
       hash,
       author,
-      lastUpdate: new Date(parseInt(lastUpdateTimestamp) * 1000).toISOString(),
+      lastUpdate: new Date(parseInt(timestamp) * 1000).toISOString(),
       treeHash,
-      branchName,
-      remoteUrl,
+      branch,
+      remote,
       version
     };
 

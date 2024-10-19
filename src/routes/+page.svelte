@@ -1,5 +1,10 @@
 <script>
+// @ts-nocheck
+
   import { onMount } from "svelte";
+  import { gsap } from "gsap";
+
+  let uhhcontent;
 
   onMount(() => {
     const preventDefault = (e) => e.preventDefault();
@@ -9,6 +14,18 @@
     });
     document.body.addEventListener("scroll", preventDefault, {
       passive: false,
+    });
+
+    // wow i did a gsap
+    gsap.from(uhhcontent, {
+      duration: 1.5,
+      y: -25,
+      opacity: 0,
+      ease: "power2.out",
+      stagger: {
+        amount: 0.3,
+        from: "start",
+      },
     });
 
     return () => {
@@ -66,7 +83,11 @@
   </nav>
 
   <main class="flex-grow flex items-center justify-center">
-    <div class="text-center" style="transform: translateY(-15%);">
+    <div
+      class="text-center"
+      style="transform: translateY(-15%);"
+      bind:this={uhhcontent}
+    >
       <h1
         style="font-family: 'Nohemi'; font-weight: 300; font-size: 70px; line-height: 1.1;"
       >
