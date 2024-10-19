@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+  // @ts-nocheck
 
   import { onMount } from "svelte";
   import { gsap } from "gsap";
@@ -17,16 +17,34 @@
     });
 
     // wow i did a gsap
-    gsap.from(uhhcontent, {
-      duration: 1.5,
-      y: -25,
-      opacity: 0,
-      ease: "power2.out",
-      stagger: {
-        amount: 0.3,
-        from: "start",
-      },
-    });
+    gsap
+      .timeline()
+      .from(uhhcontent.querySelector("h1"), {
+        duration: 0.8,
+        y: 30,
+        opacity: 0,
+        ease: "power2.out",
+      })
+      .from(
+        uhhcontent.querySelector("p"),
+        {
+          duration: 0.8,
+          y: 20,
+          opacity: 0,
+          ease: "power2.out",
+        },
+        "-=0.5"
+      )
+      .from(
+        uhhcontent.querySelector(".button-container"),
+        {
+          duration: 1,
+          y: 10,
+          opacity: 0,
+          ease: "power2.out",
+        },
+        "-=0.5"
+      );
 
     return () => {
       document.body.removeEventListener("touchmove", preventDefault);
