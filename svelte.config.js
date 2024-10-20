@@ -13,7 +13,7 @@ const config = {
   vite: {
     server: {
       fs: {
-        allow: ['../fonts', '../*.ttf', '../*.woff', '../*.woff2']
+        allow: ['../fonts', '../*.ttf']
       },
     },
   },
