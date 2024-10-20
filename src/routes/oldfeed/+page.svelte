@@ -18,7 +18,7 @@
 </sveltekit:head>
 
 <div class="bg-[#16181a] h-screen">
-  <Post id="60c4977c59c722b5661559c6" />
+  <Post id="60c4977c59c722b5661559c6" loves="2" username="jeffalo" reposts="2" comments="3" time="1623496572456" content="\u003Cp\u003Ehello world!\u003C/p\u003E"/>
 </div>
 
 <style>

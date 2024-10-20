@@ -7,15 +7,6 @@
   let uhhcontent;
 
   onMount(() => {
-    const preventDefault = (e) => e.preventDefault();
-
-    document.body.addEventListener("touchmove", preventDefault, {
-      passive: false,
-    });
-    document.body.addEventListener("scroll", preventDefault, {
-      passive: false,
-    });
-
     // wow i did a gsap
     gsap
       .timeline()
@@ -45,11 +36,6 @@
         },
         "-=0.5"
       );
-
-    return () => {
-      document.body.removeEventListener("touchmove", preventDefault);
-      document.body.removeEventListener("scroll", preventDefault);
-    };
   });
 </script>
 
@@ -200,3 +186,4 @@
     color: black;
   }
 </style>
+
