@@ -11,5 +11,6 @@ COPY --from=build /app/package.json /app/package.json
 COPY --from=build /app/node_modules /app/node_modules
 COPY --from=build /app/build /app/build
 COPY --from=build /app/server.js /app/server.js
-EXPOSE 3000
+COPY --from=build /app/.env /app/.env
+EXPOSE $(cat .env | grep PORT | cut -d= -f2)
 CMD ["node", "server.js"]
