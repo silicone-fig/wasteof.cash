@@ -12,5 +12,6 @@ COPY --from=build /app/node_modules /app/node_modules
 COPY --from=build /app/build /app/build
 COPY --from=build /app/server.js /app/server.js
 COPY --from=build /app/.env /app/.env
-EXPOSE $(cat .env | grep PORT | cut -d= -f2)
+RUN if [ -f /app/.env ]; then cat /app/.env | grep PORT | cut -d= -f2; else cat /app/.env.template | grep PORT | cut -d= -f2; fi
+EXPOSE $PORT
 CMD ["node", "server.js"]
