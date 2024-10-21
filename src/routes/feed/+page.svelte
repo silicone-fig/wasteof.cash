@@ -73,7 +73,7 @@
 
 <div class="fixed inset-0 pointer-events-none z-[1] overflow-hidden">
   <div
-    class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4 w-full max-w-[3840px] h-[10vw] max-h-[400px] min-h-[200px] bg-[url('/styling/feed-top_glow.png')] bg-cover bg-no-repeat bg-top"
+    class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4 w-full max-w-[3840px] h-[10vw] max-h-[400px] min-h-[200px] bg-[url('/styling/glow.png')] bg-cover bg-no-repeat bg-top"
   ></div>
 </div>
 

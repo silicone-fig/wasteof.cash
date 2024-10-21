@@ -1,6 +1,5 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
-import buildInsrpt from "./build-insrpt";
 
 export default defineConfig({
   plugins: [sveltekit()],
