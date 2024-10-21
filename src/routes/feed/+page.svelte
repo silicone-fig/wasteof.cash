@@ -88,7 +88,7 @@
     >
       <img
         src="/brand/nav-logo-bright.svg"
-        alt="logo"
+        alt="wasteof.cash logo"
         width="60"
         height="30"
         class="rounded-md"

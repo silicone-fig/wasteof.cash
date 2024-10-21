@@ -59,7 +59,7 @@
     <a href="/">
       <img
         src="/brand/nav-logo.svg"
-        alt="Logo"
+        alt="wasteof.cash logo"
         width="60"
         height="30"
         class="rounded"
