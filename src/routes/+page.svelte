@@ -69,7 +69,7 @@
     <div class="flex items-center">
       <a href="/" class="mr-10">
         <span
-          style="font-family: 'Nohemi'; font-weight: 300;"
+          style="font-family: '__nohemi_164e0f'; font-weight: 300;"
           class="text-[#EFE5E5] text-[16.5px]"
         >
           explore
@@ -77,7 +77,7 @@
       </a>
       <a href="/" class="mr-[45px]">
         <span
-          style="font-family: 'Nohemi'; font-weight: 300;"
+          style="font-family: '__nohemi_164e0f'; font-weight: 300;"
           class="text-[#EFE5E5] text-[16.5px]"
         >
           about
@@ -93,13 +93,13 @@
       bind:this={uhhcontent}
     >
       <h1
-        style="font-family: 'Nohemi'; font-weight: 300; font-size: 70px; line-height: 1.1;"
+        style="font-family: '__nohemi_164e0f'; font-weight: 300; font-size: 70px; line-height: 1.1;"
       >
         Interact &<br />Connect
         <span class="gradient-text-freely">Freely.</span>
       </h1>
       <p
-        style="font-family: 'Platypi'; font-size: 16px; color: #2E2E2E; margin-top: 5px;"
+        style="font-family: '__platypi_5cddfa01'; font-size: 16px; color: #2E2E2E; margin-top: 5px;"
       >
         wasteof.cash is a spirited and cutting-edge alternative<br />client for
         wasteof.money with
@@ -120,12 +120,12 @@
 
 <style>
   @font-face {
-    font-family: "Platypi";
-    src: url("/fonts/Platypi/Platypi-VF.ttf");
+    font-family: "__platypi_5cddfa01";
+    src: url("/static/media/_5cddfa01bed90638148169d627c0b3ae.ttf");
   }
   @font-face {
-    font-family: "Nohemi";
-    src: url("/fonts/Nohemi/Nohemi-VF.ttf");
+    font-family: "__nohemi_164e0f";
+    src: url("/static/media/_164e0f7e37680def92131715a86af08c.ttf");
   }
   .gradient-text-freely {
     background: linear-gradient(180deg, #76958f -65%, #c7fbf1 87%);
@@ -157,7 +157,7 @@
     justify-content: center;
   }
   .sign-in-button {
-    font-family: "Nohemi", sans-serif;
+    font-family: "__nohemi_164e0f", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: white;

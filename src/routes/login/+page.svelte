@@ -115,13 +115,13 @@
         class="absolute top-5 left-1/2 -translate-x-1/2 w-12 h-12 object-contain opacity-85"
       />
       <h2
-        style="font-family: 'Nohemi'; font-weight: 500; font-size: 16px;"
+        style="font-family: '__nohemi_164e0f'; font-weight: 500; font-size: 16px;"
         class="mt-16 text-black"
       >
         Welcome Back!
       </h2>
       <p
-        style="font-family: 'Nohemi'; font-weight: 400; font-size: 11.5px; color: #727272;"
+        style="font-family: '__nohemi_164e0f'; font-weight: 400; font-size: 11.5px; color: #727272;"
         class="mt-2 text-center px-4"
       >
         Sign in with your username and password.
@@ -137,7 +137,7 @@
             placeholder="username"
             bind:value={username}
             class="w-full py-1 pl-10 pr-3 rounded-lg bg-[#E7E7E7] text-[#7D7979] placeholder-[#7D7979] focus:outline-none"
-            style="font-family: 'Nohemi'; font-weight: 300; font-size: 14px;"
+            style="font-family: '__nohemi_164e0f'; font-weight: 300; font-size: 14px;"
           />
         </div>
         <div class="relative">
@@ -150,20 +150,20 @@
             placeholder="password"
             bind:value={password}
             class="w-full py-1 pl-10 pr-3 rounded-lg bg-[#E7E7E7] text-[#7D7979] placeholder-[#7D7979] focus:outline-none"
-            style="font-family: 'Nohemi'; font-weight: 300; font-size: 14px;"
+            style="font-family: '__nohemi_164e0f'; font-weight: 300; font-size: 14px;"
           />
         </div>
         <button
           type="submit"
           class="w-full py-1 rounded-lg bg-[#1E1E1E] text-white focus:outline-none hover:bg-[#2A2A2A] transition-colors duration-200 mt-6"
-          style="font-family: 'Nohemi'; font-weight: 400; font-size: 14px;"
+          style="font-family: '__nohemi_164e0f'; font-weight: 400; font-size: 14px;"
         >
           Sign In
         </button>
         {#if errorMessage}
           <p
             class="text-red-500 mt-2 text-center"
-            style="font-family: 'Nohemi'; font-size: 12px;"
+            style="font-family: '__nohemi_164e0f'; font-size: 12px;"
             transition:fade={{ duration: 100 }}
             use:fadeoutsuperkool
           >
@@ -177,7 +177,7 @@
 
 <style>
   @font-face {
-    font-family: "Nohemi";
-    src: url("/fonts/Nohemi/Nohemi-VF.ttf");
+    font-family: "__nohemi_164e0f";
+    src: url("/static/media/_164e0f7e37680def92131715a86af08c.ttf");
   }
 </style>

@@ -23,7 +23,7 @@
 
 <style>
   @font-face {
-    font-family: "Nohemi";
-    src: url("/fonts/Nohemi/Nohemi-VF.ttf");
+    font-family: "__nohemi_164e0f";
+    src: url("/static/media/_164e0f7e37680def92131715a86af08c.ttf");
   }
 </style>
